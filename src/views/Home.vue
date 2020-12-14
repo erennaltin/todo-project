@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-    <sub-topic />
+    <add-project />
 
   </div>
 </template>
 
 <script>
-import SubTopic from '../components/SubTopic.vue'
+import AddProject from '../components/AddProject.vue'
+
 
 
 // @ is an alias to /src
@@ -14,7 +15,8 @@ import SubTopic from '../components/SubTopic.vue'
 export default {
   name: 'Home',
   components: {
-    SubTopic
+    AddProject
+    
   
    
     

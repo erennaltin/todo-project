@@ -8,20 +8,21 @@
             <sub-topic />
             <sub-topic />
             <sub-topic />
-
         </div>
-     
+        <add-project class="addProject" />
 
     </div>
 </template>
 
 <script>
+import AddProject from './AddProject.vue';
 import ControlPanel from './ControlPanel.vue'
 import SubTopic from './SubTopic.vue'
 
 export default {
     components: { 
-      ControlPanel, SubTopic },
+      ControlPanel, SubTopic,
+        AddProject },
     name:'SideBar',
     mounted () {
         document.querySelector(".controlPanel").addEventListener('scroll', this.changeWindow);
@@ -45,9 +46,10 @@ export default {
     grid-template-columns: 230px 20px;
     grid-template-rows: 60px 620px 1fr;
     grid-template-areas:"C C"
-                        "A B";
+                        "A B"
+                        "D D";
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     background-color: @bgb;
     font-family:@font;
 
@@ -69,7 +71,10 @@ export default {
             display: none;
         }
     }
-  
+    
+    .addProject {
+        grid-area: D;
+    }
 }
 .progress {
     grid-area: B;
