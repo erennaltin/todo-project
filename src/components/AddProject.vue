@@ -29,9 +29,9 @@
         font-size: 50px;
         font-weight: 300;
         color: white;
-        background-color: blue;
+        background-color: @phh;
         border-radius: 999px;
-        box-shadow: 0 0 4px 2px rgb(62, 62, 255);
+        box-shadow: 0 0 4px 2px @phh;
         transition: 0.3s;
         &:hover {
             box-shadow: 0 0 6px 3px rgb(109, 153, 247);

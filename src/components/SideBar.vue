@@ -1,5 +1,5 @@
 <template>
-    <div class="SideBar" @click="changeWindow" >
+    <div class="SideBar" >
         <h1 class="main-text"> To-Do App </h1>
         <div class="progress"></div>
         <div class="controlPanel">
@@ -84,6 +84,7 @@ export default {
   border-radius: 3px;
   background-color: rgb(0, 183, 255);
   animation: progress 1s linear;
+  justify-self: flex-start;
 }
 
 @keyframes progress {

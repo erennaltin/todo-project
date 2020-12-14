@@ -2,17 +2,23 @@
   <div class="body">
     <div class="app">
       <side-bar class="sideBar" />
+      <project-page class="projectPage" />
     </div>
   </div>
 </template>
 
 <script>
 import SideBar from '../components/SideBar.vue'
+import ProjectPage from '../components/ProjectPage.vue'
   export default {
-  components: { SideBar },
+  components: { 
+    SideBar,
+    ProjectPage
+    },
     name:'About'
   }
-</script>
+
+    ProjectPage</script>
 
 <style lang="less" scoped>
 .body {
@@ -21,23 +27,27 @@ import SideBar from '../components/SideBar.vue'
   align-items: center;
   justify-content: center;
   margin: auto 0;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 
 .app {
   width: 1050px;
   height: 780px;
-  background-color: red;
+  background-color: white;
   display: grid;
   grid-template-columns: 250px 800px;
-  grid-template-rows: 160px 550px 70px;
   grid-template-areas: "A B"
-                       "A C"
-                       "A D";
+                       "A B"
+                       "A B";
   border-radius: 25px;
 }
 
 .sideBar {
   grid-area: A;
-  
+}
+
+.projectPage {
+  grid-area: B;
 }
 </style>

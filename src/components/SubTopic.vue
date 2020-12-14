@@ -35,6 +35,6 @@ import ControlTab from './ControlTab.vue'
 .projectName {
     padding: 5px 0;
     transform: translateX(30px);
-    color: @projectNameColor;
+    color: @pnc;
 }
 </style>
