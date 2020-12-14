@@ -2,19 +2,21 @@
     <div class="ProjectPage">
         <page-header class="pageHeader"/>
         <note-desc class="noteDescription" />
-
+        <page-control class="pageControl" />
     </div>
 </template>
 
 <script>
 import NoteDesc from './NoteDesc.vue'
+import PageControl from './PageControl.vue'
 import PageHeader from './PageHeader.vue'
 
 export default {
     name: 'ProjectPage',
     components: {
         PageHeader,
-        NoteDesc
+        NoteDesc,
+        PageControl
     }
     
 
@@ -40,5 +42,9 @@ export default {
 
 .noteDescription {
     grid-area: B;
+}
+
+.pageControl {
+    grid-area: C;
 }
 </style>

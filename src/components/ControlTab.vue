@@ -42,7 +42,7 @@ export default {
         transform: translateX(+20px);
     }
     &:hover {
-        padding: 10px 10px;
+        padding: 5px 5px;
     }
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <component class="icon" :is="tag" />
+        <component class="icon" :is="tag" id="svg" />
 </template>
 
 <script>
@@ -25,7 +25,10 @@ import Element2 from '@/assets/Icons/Element2.svg'
         props: {
             tag: {
                 default: 'Exclamation'
-            }
+            },
+        },
+        created(){
+            document.body.style.setProperty(`--Iconcolor`,this.color)
         }
     }
 </script>
@@ -35,4 +38,6 @@ import Element2 from '@/assets/Icons/Element2.svg'
     height: 20px;
     width: 20px;
 }
+
+
 </style>

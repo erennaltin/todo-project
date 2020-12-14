@@ -51,22 +51,21 @@
     }}
     .progress {
         grid-area: B;
-        height:100%;
+        height:0%;
         width: 6px;
         border-radius: 3px;
-        // background-color: rgb(0, 183, 255);
-        background-color: black;
+        background-color: rgb(0, 183, 255);
         animation: progress 1s linear;
 
     }
 
-    // @keyframes progress {
-    // to {
-    //     background-color: #0082de;
-    //     background-image: linear-gradient(180deg, #0082de 0%, #FC00FF 100%);
-    //     height: 100%;
-    //     }
-    // }
+    @keyframes progress {
+    to {
+        background-color: #0082de;
+        background-image: linear-gradient(180deg, #0082de 0%, #FC00FF 100%);
+        height: 100%;
+        }
+    }
     :root * {
 
     /* Pause the animation */
